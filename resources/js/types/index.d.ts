@@ -30,6 +30,9 @@ export interface User {
     email: string;
     avatar?: string;
     email_verified_at: string | null;
+    roles_data?: Array<{id: number, name: string}>;
+    roles?: string[];
+    permissions?: string[];
     created_at: string;
     updated_at: string;
 }
